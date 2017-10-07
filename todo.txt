@@ -1,0 +1,18 @@
+##1
+Header Hight shrink amination
+
+transition: 2s;
+/* margin: 300 0 300 0; */
+
+
+##2
+Unser line animation. (flower end)
+
+##3
+Daorative Border
+
+##4
+Card BG
+
+##5
+Full BG image

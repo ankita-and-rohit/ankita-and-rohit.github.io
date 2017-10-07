@@ -12,13 +12,13 @@
 
 .bg-grd {
 	border: rgba(236, 164, 66, 0.93);
-    border-style: solid;
-    border-radius: 9px;
-    background: linear-gradient(rgba(166, 7, 7, 0.92), rgb(34, 1, 0));
+  border-style: solid;
+  border-radius: 9px;
+  background: linear-gradient(rgba(166, 7, 7, 0.92), rgb(34, 1, 0));
 }
 
 .events{
-	padding: 50px;
+	padding: 10px 50px 50px 50px;
 }
 
 .auto-margin{
@@ -29,9 +29,12 @@
 	text-align: center;
 }
 
-.text-style{
+.heading-text-style{
 	color: rgba(236, 190, 66, 0.93);
-    font-style: italic;
+  font-style: italic;
+  font-size: 50;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 
 .margin-top{
@@ -39,6 +42,9 @@
 }
 
 .card {
+  background-image: url("images/card-bg5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 	font-style: italic;
 	font-size: x-large;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -57,7 +63,7 @@
 
 /* Add some padding inside the card container */
 .container {
-    padding: 15px 30px;
+    padding: 25px 30px 10px 114px;
 }
 
 
@@ -73,12 +79,12 @@ function fullScreen() {
 </script>
 
 <body class="bg-grd">
-<h1 class="text-center margin-top text-style">
+<h1 class="text-center heading-text-style">
 Wedding Invitation
 </h1>
 
 <div class="ganesh-img auto-margin">
-	<img class="ganesh-img" src="ganesh1.png">
+	<img class="ganesh-img" src="images/ganesh1.png">
 </div>
 
 <div class="events">
@@ -105,7 +111,7 @@ Wedding Invitation
 </div>
 
 <div class="page-end-img auto-margin">
-	<img class="page-end-img" src="end1.png">
+	<img class="page-end-img" src="images/end1.png">
 </div>
 
 </div>
