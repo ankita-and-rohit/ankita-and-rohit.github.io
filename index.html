@@ -69,14 +69,34 @@
 
 </style>
 
+<!--
 <script>
-/*
 function fullScreen() {
     //document.body.requestFullscreen();
 	document.body.webkitRequestFullscreen();
 }
-*/
 </script>
+-->
+
+<script type="text/javascript">
+    function requestFullScreen(element) {
+    // Supports most browsers and their versions.
+    var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullScreen;
+
+    if (requestMethod) { // Native full screen.
+        requestMethod.call(element);
+    } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
+        var wscript = new ActiveXObject("WScript.Shell");
+        if (wscript !== null) {
+            wscript.SendKeys("{F11}");
+        }
+    }
+}
+
+var elem = document.body; // Make the body go full screen.
+requestFullScreen(elem);
+
+</script> 
 
 <body class="bg-grd">
 <h1 class="text-center heading-text-style">
@@ -91,22 +111,41 @@ Wedding Invitation
 
 <div class="card">
   <div class="container">
-    <h4><b>Ganesh Puja</b></h4> 
-    <p>26th November</p>
+    <h3><b>Ganesh Puja</b></h3> 
+    <p><b>Date:</b> 26<sup>th</sup> November, Morning 9 AM</p>
+    <p><b>Venue:</b> Our residence E/C 12-13, Chandanvan, Mathura </p>
   </div>
 </div>
 
 <div class="card">
   <div class="container">
-    <h4><b>Marriage Ceremony</b></h4> 
-    <p>28th November</p>
+    <h3><b>Baraat</b></h3> 
+    <p>Starts at Morning <b>7:30 AM, 27<sup>th</sup> November</b> from Our 
+    residence in Mathura, toward: Shri Bhuwan Chandra Joshi Farmhouse, near Brijwasi School, kamaluaganja, Haldwani</p>
   </div>
 </div>
 
 <div class="card">
   <div class="container">
-    <h4><b>Reception</b></h4> 
-    <p>30th November</p>
+    <h3><b>Marriage Ceremony</b></h3> 
+    <p><b>Date:</b> 28<sup>th</sup> November, Evening</p>
+    <p><b>Venue:</b> The Mukund Banquet Hall, near RTO office, Haldwani</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="container">
+    <h3><b>Vadhu Aagman</b></h3> 
+    <p><b>Date:</b> 29<sup>th</sup> November, Evening</p>
+    <p><b>Venue:</b> E/C 12-13, Chandanvan, Mathura</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="container">
+    <h3><b>Reception</b></h3> 
+    <p><b>Date:</b> 30<sup>th</sup> November, Evening 7 PM</p>
+    <p><b>Venue:</b> Hotel Mukund Palace, Junction Rd., Sonkh Adda, Mathura</p>
   </div>
 </div>
 
