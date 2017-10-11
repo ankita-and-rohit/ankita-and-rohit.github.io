@@ -7,6 +7,11 @@
     to   { margin-top: 40px; margin-bottom: 50px; }
 }
 
+@keyframes underline {
+    from { width:1px; }
+    to   { width: 100%; }
+}
+
 .ganesh-img{
 	width: 165px;
 }
@@ -27,11 +32,21 @@
 }
 
 .auto-margin{
-	margin: auto;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-top-75{
+  margin-top: 75px;
 }
 
 .text-center{
 	text-align: center;
+}
+
+.heading-cover{
+  width: fit-content;
+  margin: auto;
 }
 
 .heading-text-style{
@@ -39,9 +54,20 @@
   font-style: italic;
   font-size: 50;
   margin-top: 40px;
-  margin-bottom: 50px;
-  animation-name: animate;
+  margin-bottom: 5px;
+  /*animation-name: animate;
   animation-duration: 2s;
+  animation-delay: .1s;*/
+}
+
+.header-underline{
+  transition: 1s;
+  margin: auto;
+  border-bottom: #F44336;
+  border-bottom-style: groove;
+  width: 100%;
+  animation-name: underline;
+  animation-duration: 5s;
   animation-delay: .1s;
 }
 
@@ -50,7 +76,7 @@
 }
 
 .card {
-  background-image: url("images/card-bg5.jpg");
+  background-image: url("images/card-bg55.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 	font-style: italic;
@@ -84,7 +110,6 @@ function fullScreen() {
 	document.body.webkitRequestFullscreen();
 }
 </script>
--->
 
 <script type="text/javascript">
     function requestFullScreen(element) {
@@ -101,17 +126,22 @@ function fullScreen() {
     }
 }
 
+
 var elem = document.body; // Make the body go full screen.
 requestFullScreen(elem);
 
 </script> 
+-->
+
 
 <body class="bg-grd">
-<h1 class="text-center heading-text-style">
-Wedding Invitation
-</h1>
-
-<div class="ganesh-img auto-margin">
+<div class="heading-cover">
+  <h1 class="text-center heading-text-style">
+  Wedding Invitation
+  </h1>
+  <div class="header-underline"></div>
+</div>
+<div class="ganesh-img auto-margin margin-top-75">
 	<img class="ganesh-img" src="images/ganesh4.png">
 </div>
 
