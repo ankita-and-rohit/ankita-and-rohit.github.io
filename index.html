@@ -12,6 +12,11 @@
     to   { width: 100%; }
 }
 
+.test{
+  background-image: url("images/bg4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .ganesh-img{
 	width: 165px;
 }
@@ -24,8 +29,20 @@
 	border: rgba(236, 164, 66, 0.93);
   border-style: solid;
   border-radius: 9px;
-  background-color: #ab1a1a;
-  background: linear-gradient(rgba(179, 18, 18, 0.99), rgb(77, 10, 8));
+  background-color: #aa1414;
+  /*background: linear-gradient(rgba(179, 18, 18, 0.99), rgb(77, 10, 8));*/
+  background-image: url("images/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.borderimg { 
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(images/border.png) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(images/border.png) 30 round; /* Opera 11-12.1 */
+    border-image: url(images/border.png) 30 round;
 }
 
 .events{
@@ -145,7 +162,7 @@ requestFullScreen(elem);
 -->
 
 
-<body class="bg-grd">
+<body class="bg-grd borderimg test">
 <div class="heading-cover">
   <h1 class="text-center heading-text-style">
   <span class="big-text">W</span>edding <span class="big-text">I</span>nvitation
@@ -158,12 +175,14 @@ requestFullScreen(elem);
 
 <div class="events">
 
+<div>
 <div class="card">
   <div class="container">
     <h3><b>Ganesh Puja</b></h3> 
     <p><b>Date:</b> 26<sup>th</sup> November, Morning 9 AM</p>
     <p><b>Venue:</b> Our residence E/C 12-13, Chandanvan, Mathura </p>
   </div>
+</div>
 </div>
 
 <div class="card">
