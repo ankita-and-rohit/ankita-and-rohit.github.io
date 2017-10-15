@@ -13,12 +13,16 @@
 }
 
 .test{
-  background-image: url("images/bg4.jpg");
+  background-image: url("images/corner.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .ganesh-img{
 	width: 165px;
+}
+
+.vakra-tunda-img{
+  width: 380px;
 }
 
 .page-end-img{
@@ -101,11 +105,21 @@
   animation-delay: .1s;*/
 }
 
-.card {
+.front-card-bg {
+  background-image: url("images/frontcard.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #e6a911;
+}
 
+.card-bg {
   background-image: url("images/card-bg55.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #e6a911;
+}
+
+.card {
 	font-style: italic;
   opacity: 0.9;
 	/*font-size: 125%;
@@ -114,7 +128,6 @@
   box-shadow: 6px 6px 10px 6px rgba(0, 0, 0, 0.45);
   transition: 0.3s;
   border-radius: 18px;
-  background-color: #e6a911;
   color: #970e0e;
   margin: 50px auto;
   max-width: 800px;
@@ -122,15 +135,19 @@
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-    box-shadow: 7px 7px 10px 7px rgba(0, 0, 0, 0.62);
+  box-shadow: 9px 9px 10px 7px rgba(0, 0, 0, 0.66);
 }
 
 /* Add some padding inside the card container */
 .container {
-    padding: 20px 30px 10px 73px;
+  padding: 20px 30px 10px 73px;
 }
 
-
+.sloka{
+  text-align: center;
+  font-family: cursive;
+  font-size: 23px;
+}
 </style>
 
 <!--
@@ -174,20 +191,33 @@ requestFullScreen(elem);
 <div class="ganesh-img auto-margin margin-top-75">
 	<img class="ganesh-img" src="images/ganesh4.png">
 </div>
+<div class="vakra-tunda-img auto-margin">
+  <img class="vakra-tunda-img" src="images/vakra-tunda.png">
+</div>
+
+
 
 <div class="events">
 
-<div>
-<div class="card">
+<div class="card front-card-bg">
+  <div class="container">
+
+    <br/>
+    <h3>please do come to our wedding to celebrate bla bla bla 😜 😜 😜 </h3>
+    
+    <p class="sloka">aham prithvi tvam, Retoham retabhru tvam, Manoham asmi vaktam, Samaham asmi rikritvam, Sa maam anuvruta bhava</p>
+  </div>
+</div>
+
+<div class="card card-bg">
   <div class="container">
     <h3><b>Ganesh Puja</b></h3> 
     <p><b>Date:</b> 26<sup>th</sup> November, Morning 9 AM</p>
     <p><b>Venue:</b> Our residence E/C 12-13, Chandanvan, Mathura </p>
   </div>
 </div>
-</div>
 
-<div class="card">
+<div class="card card-bg">
   <div class="container">
     <h3><b>Baraat</b></h3> 
     <p>Starts at Morning <b>7:30 AM, 27<sup>th</sup> November</b> from Our 
@@ -195,7 +225,7 @@ requestFullScreen(elem);
   </div>
 </div>
 
-<div class="card">
+<div class="card card-bg">
   <div class="container">
     <h3><b>Marriage Ceremony</b></h3> 
     <p><b>Date:</b> 28<sup>th</sup> November, Evening</p>
@@ -203,7 +233,7 @@ requestFullScreen(elem);
   </div>
 </div>
 
-<div class="card">
+<div class="card card-bg">
   <div class="container">
     <h3><b>Vadhu Aagman</b></h3> 
     <p><b>Date:</b> 29<sup>th</sup> November, Evening</p>
@@ -211,7 +241,7 @@ requestFullScreen(elem);
   </div>
 </div>
 
-<div class="card">
+<div class="card card-bg">
   <div class="container">
     <h3><b>Reception</b></h3> 
     <p><b>Date:</b> 30<sup>th</sup> November, Evening 7 PM</p>
